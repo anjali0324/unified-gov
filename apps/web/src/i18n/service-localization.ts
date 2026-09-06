@@ -53,8 +53,26 @@ const hindiDocuments: Record<string, string> = {
 };
 
 const hindiProfileFields: Record<string, string> = {
-  full_name: "पूरा नाम", date_of_birth: "जन्म तिथि", gender: "लिंग", address: "पता", category: "श्रेणी", education: "शिक्षा"
+  full_name: "पूरा नाम", date_of_birth: "जन्म तिथि", gender: "लिंग", nationality: "राष्ट्रीयता", marital_status: "वैवाहिक स्थिति", mobile: "प्राथमिक मोबाइल", alternate_mobile: "वैकल्पिक मोबाइल", email: "ईमेल पता", father_name: "पिता का नाम", mother_name: "माता का नाम", guardian_name: "अभिभावक का नाम", guardian_relationship: "अभिभावक से संबंध", category: "श्रेणी", ews_status: "EWS स्थिति", disability_status: "दिव्यांग व्यक्ति (PwD)", ex_serviceman_status: "पूर्व सैनिक स्थिति", minority_status: "अल्पसंख्यक स्थिति", highest_qualification: "उच्चतम योग्यता", current_education_status: "वर्तमान शिक्षा स्थिति", current_course: "वर्तमान पाठ्यक्रम", current_institution: "संस्थान", employment_status: "रोज़गार स्थिति", occupation: "व्यवसाय", annual_family_income_range: "वार्षिक पारिवारिक आय सीमा", preferred_language: "पसंदीदा भाषा", address: "पता"
 };
+
+const kannadaProfileFields: Record<string, string> = {
+  full_name: "ಪೂರ್ಣ ಹೆಸರು", date_of_birth: "ಜನ್ಮ ದಿನಾಂಕ", gender: "ಲಿಂಗ", nationality: "ರಾಷ್ಟ್ರೀಯತೆ", marital_status: "ವೈವಾಹಿಕ ಸ್ಥಿತಿ", mobile: "ಪ್ರಾಥಮಿಕ ಮೊಬೈಲ್", alternate_mobile: "ಪರ್ಯಾಯ ಮೊಬೈಲ್", email: "ಇಮೇಲ್ ವಿಳಾಸ", father_name: "ತಂದೆಯ ಹೆಸರು", mother_name: "ತಾಯಿಯ ಹೆಸರು", guardian_name: "ಪೋಷಕರ ಹೆಸರು", guardian_relationship: "ಪೋಷಕರ ಸಂಬಂಧ", category: "ವರ್ಗ", ews_status: "EWS ಸ್ಥಿತಿ", disability_status: "ಅಂಗವೈಕಲ್ಯ ಸ್ಥಿತಿ", ex_serviceman_status: "ಮಾಜಿ ಸೈನಿಕ ಸ್ಥಿತಿ", minority_status: "ಅಲ್ಪಸಂಖ್ಯಾತ ಸ್ಥಿತಿ", highest_qualification: "ಅತ್ಯುನ್ನತ ವಿದ್ಯಾರ್ಹತೆ", current_education_status: "ಪ್ರಸ್ತುತ ಶಿಕ್ಷಣ ಸ್ಥಿತಿ", current_course: "ಪ್ರಸ್ತುತ ಕೋರ್ಸ್", current_institution: "ಸಂಸ್ಥೆ", employment_status: "ಉದ್ಯೋಗ ಸ್ಥಿತಿ", occupation: "ವೃತ್ತಿ", annual_family_income_range: "ವಾರ್ಷಿಕ ಕುಟುಂಬ ಆದಾಯ ವ್ಯಾಪ್ತಿ", preferred_language: "ಆದ್ಯತೆಯ ಭಾಷೆ", address: "ವಿಳಾಸ"
+};
+
+const teluguProfileFields: Record<string, string> = {
+  full_name: "పూర్తి పేరు", date_of_birth: "పుట్టిన తేదీ", gender: "లింగం", nationality: "జాతీయత", marital_status: "వైవాహిక స్థితి", mobile: "ప్రాథమిక మొబైల్", alternate_mobile: "ప్రత్యామ్నాయ మొబైల్", email: "ఇమెయిల్ చిరునామా", father_name: "తండ్రి పేరు", mother_name: "తల్లి పేరు", guardian_name: "సంరక్షకుడి పేరు", guardian_relationship: "సంరక్షకుడితో సంబంధం", category: "వర్గం", ews_status: "EWS స్థితి", disability_status: "వైకల్య స్థితి", ex_serviceman_status: "మాజీ సైనికుడి స్థితి", minority_status: "మైనారిటీ స్థితి", highest_qualification: "అత్యున్నత అర్హత", current_education_status: "ప్రస్తుత విద్యా స్థితి", current_course: "ప్రస్తుత కోర్సు", current_institution: "సంస్థ", employment_status: "ఉపాధి స్థితి", occupation: "వృత్తి", annual_family_income_range: "వార్షిక కుటుంబ ఆదాయ పరిధి", preferred_language: "ప్రాధాన్య భాష", address: "చిరునామా"
+};
+
+const bengaliProfileFields: Record<string, string> = {
+  full_name: "পুরো নাম", date_of_birth: "জন্ম তারিখ", gender: "লিঙ্গ", nationality: "জাতীয়তা", marital_status: "বৈবাহিক অবস্থা", mobile: "প্রাথমিক মোবাইল", alternate_mobile: "বিকল্প মোবাইল", email: "ইমেল ঠিকানা", father_name: "বাবার নাম", mother_name: "মায়ের নাম", guardian_name: "অভিভাবকের নাম", guardian_relationship: "অভিভাবকের সঙ্গে সম্পর্ক", category: "বিভাগ", ews_status: "EWS অবস্থা", disability_status: "প্রতিবন্ধিতার অবস্থা", ex_serviceman_status: "প্রাক্তন সেনাসদস্যের অবস্থা", minority_status: "সংখ্যালঘু অবস্থা", highest_qualification: "সর্বোচ্চ যোগ্যতা", current_education_status: "বর্তমান শিক্ষার অবস্থা", current_course: "বর্তমান কোর্স", current_institution: "প্রতিষ্ঠান", employment_status: "কর্মসংস্থানের অবস্থা", occupation: "পেশা", annual_family_income_range: "বার্ষিক পারিবারিক আয়ের সীমা", preferred_language: "পছন্দের ভাষা", address: "ঠিকানা"
+};
+
+const tamilProfileFields: Record<string, string> = {
+  full_name: "முழுப் பெயர்", date_of_birth: "பிறந்த தேதி", gender: "பாலினம்", nationality: "தேசியம்", marital_status: "திருமண நிலை", mobile: "முதன்மை மொபைல்", alternate_mobile: "மாற்று மொபைல்", email: "மின்னஞ்சல் முகவரி", father_name: "தந்தையின் பெயர்", mother_name: "தாயின் பெயர்", guardian_name: "பாதுகாவலரின் பெயர்", guardian_relationship: "பாதுகாவலருடனான உறவு", category: "வகை", ews_status: "EWS நிலை", disability_status: "மாற்றுத்திறன் நிலை", ex_serviceman_status: "முன்னாள் ராணுவ வீரர் நிலை", minority_status: "சிறுபான்மை நிலை", highest_qualification: "உயர்ந்த தகுதி", current_education_status: "தற்போதைய கல்வி நிலை", current_course: "தற்போதைய பாடநெறி", current_institution: "நிறுவனம்", employment_status: "வேலைவாய்ப்பு நிலை", occupation: "தொழில்", annual_family_income_range: "வருடாந்திர குடும்ப வருமான வரம்பு", preferred_language: "விருப்ப மொழி", address: "முகவரி"
+};
+
+const profileFieldsByLanguage: Partial<Record<Language, Record<string, string>>> = { hi: hindiProfileFields, kn: kannadaProfileFields, te: teluguProfileFields, bn: bengaliProfileFields, ta: tamilProfileFields };
 
 const hindiOptions: Record<string, string> = {
   "New Delhi": "नई दिल्ली", Mumbai: "मुंबई", Bengaluru: "बेंगलुरु", "Paper 1": "पेपर 1", "Paper 2": "पेपर 2",
@@ -64,7 +82,7 @@ const hindiOptions: Record<string, string> = {
 };
 
 export function localizeService<T extends GovernmentService>(service: T, language: Language): T {
-  if (language === "en") return service;
+  if (language !== "hi") return service;
   const copy = hindiServices[service.id];
   const localized = {
     ...service,
@@ -96,7 +114,7 @@ export function localizeDepartment(serviceId: string, fallback: string, language
 }
 
 export function localizeProfileField(field: string, language: Language) {
-  return language === "hi" ? hindiProfileFields[field] ?? field.replaceAll("_", " ") : field.replaceAll("_", " ");
+  return profileFieldsByLanguage[language]?.[field] ?? field.replaceAll("_", " ");
 }
 
 export function localizeDocumentType(type: string, fallback: string, language: Language) {
